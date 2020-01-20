@@ -1,0 +1,117 @@
+@font-face {
+	src: url(font/Gotham-Light.otf);
+	font-family: 'gotham';
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'gotham';
+	background: #c31432; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #240b36, #c31432); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#240b36,
+		#c31432
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	height: 967px;
+	overflow-y: hidden;
+}
+.container {
+	background-color: #fff;
+	background-color: rgba(241, 198, 198, 0.192);
+	height: 550px;
+	width: 500px;
+	-webkit-box-shadow: 2px 3px 3px rgb(49, 49, 49);
+	-moz-box-shadow: 2px 3px 3px rgb(49, 49, 49);
+	box-shadow: 2px 3px 3px rgb(49, 49, 49);
+	-webkit-text-shadow: 2px 3px 3px rgb(49, 49, 49);
+	-moz-text-shadow: 2px 3px 3px rgb(49, 49, 49);
+	text-shadow: 2px 3px 3px rgb(49, 49, 49);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.head1 {
+	margin-top: -30px;
+	text-align: center;
+	font-size: 17px;
+	color: white;
+}
+.about {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 38px;
+	margin-right: 38px;
+	float: right;
+	font-size: 17px;
+	color: white;
+}
+.head2 {
+	text-align: center;
+	font-size: 17px;
+	color: white;
+}
+.about2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 38px;
+	margin-right: 38px;
+	float: right;
+	font-size: 17px;
+	color: white;
+}
+.social {
+	margin-top: 20px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+ul li {
+	list-style: none;
+	margin: 0 15px;
+}
+ul li a {
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 63px;
+	background: #333333;
+	border-radius: 50%;
+	font-size: 30px;
+	color: white;
+	transition: .5s;
+}
+ul li a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #ffee10;
+	transition: .5s;
+	transform: scale(.9);
+	z-index: -1;
+}
+ul li a:hover::before {
+	transform: scale(1.1);
+	box-shadow: 0 0 15px #ffee10;
+}
+ul li a:hover {
+	color: #ffee10;
+	box-shadow: 0 0 5px #ffee10;
+	text-shadow: 0 0 5px #ffee10;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umbrella | Weather</title>
+    <link rel="icon" href="./images/logo.png" type="image/ico">
+    <link rel="stylesheet" href="./front.css">
+</head>
+<body>      
+    <div class="favicon">
+        <a href="./about.php">
+        <img  alt="About" src="./images/logo.png" style=" height:50px; width:auto; float:left;"></a>
+    </div>
+    <div class="nav">
+        <a href="./city.php">
+        <img  alt="Search" src="./images/search.png" style=" height:35px; width:35px; float:right; margin-top:-45px; margin-right:30px; "></a>
+        <a href="index.php?logout='1'">
+        <img  alt="Logout" src="./images/logout.png"style=" height:36px; width:auto; float:right; margin-top:5px; margin-right: 30px; "></a>
+        </div>
+    <div class="weather">
+    <div class="location">
+        <h1 class="location-timezone">location</h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="temperature-degree">34</h2>
+            <span>F</span>
+        </div>
+        <div class="temperature-description">Its just cool</div>
+    </div>
+    </div>
+<script src="./skycons.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
